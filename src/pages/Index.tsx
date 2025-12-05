@@ -44,10 +44,10 @@ const features = [
 ];
 
 const universities = [
-  { name: "МГУ им. Ломоносова", location: "Москва", rating: 4.9, programs: 120 },
-  { name: "СПбГУ", location: "Санкт-Петербург", rating: 4.8, programs: 95 },
-  { name: "МФТИ", location: "Москва", rating: 4.9, programs: 45 },
-  { name: "ВШЭ", location: "Москва", rating: 4.7, programs: 150 },
+  { name: "Назарбаев Университет", location: "Астана", rating: 4.9, programs: 65 },
+  { name: "КазНУ им. аль-Фараби", location: "Алматы", rating: 4.8, programs: 120 },
+  { name: "КБТУ", location: "Алматы", rating: 4.7, programs: 35 },
+  { name: "СДУ", location: "Алматы", rating: 4.6, programs: 45 },
 ];
 
 export default function Index() {

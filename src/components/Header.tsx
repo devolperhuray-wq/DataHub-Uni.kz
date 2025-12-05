@@ -42,11 +42,6 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden md:flex items-center gap-3">
-          <Button variant="outline" size="sm">Войти</Button>
-          <Button size="sm">Подать заявку</Button>
-        </div>
-
         {/* Mobile Menu Button */}
         <button
           className="md:hidden p-2"
@@ -75,10 +70,6 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-            <div className="flex gap-3 mt-4 pt-4 border-t border-border">
-              <Button variant="outline" className="flex-1">Войти</Button>
-              <Button className="flex-1">Подать заявку</Button>
-            </div>
           </nav>
         </div>
       )}
