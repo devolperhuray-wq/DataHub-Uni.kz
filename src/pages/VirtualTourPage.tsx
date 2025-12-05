@@ -18,52 +18,54 @@ import {
 const tours = [
   {
     id: 1,
-    university: "МГУ им. Ломоносова",
-    location: "Москва",
+    university: "Назарбаев Университет",
+    location: "Астана",
     duration: "15 мин",
-    views: 12500,
-    spots: ["Главное здание", "Библиотека", "Ботанический сад", "Спорткомплекс"],
+    views: 18500,
+    spots: ["Главный корпус", "Библиотека", "Лаборатории", "Спорткомплекс"],
     thumbnail: "https://images.unsplash.com/photo-1564981797816-1043664bf78d?w=800&h=600&fit=crop",
     featured: true,
   },
   {
     id: 2,
-    university: "МФТИ",
-    location: "Долгопрудный",
+    university: "КазНУ им. аль-Фараби",
+    location: "Алматы",
     duration: "12 мин",
-    views: 8300,
-    spots: ["Главный корпус", "Лаборатории", "Общежития", "Столовая"],
+    views: 15300,
+    spots: ["Главное здание", "Научная библиотека", "Ботанический сад"],
     thumbnail: "https://images.unsplash.com/photo-1562774053-701939374585?w=800&h=600&fit=crop",
-    featured: false,
+    featured: true,
   },
   {
     id: 3,
-    university: "ВШЭ",
-    location: "Москва",
+    university: "КБТУ",
+    location: "Алматы",
     duration: "10 мин",
     views: 9800,
-    spots: ["Покровка", "Мясницкая", "Шаболовка", "Библиотека"],
+    spots: ["Учебный корпус", "IT-лаборатории", "Коворкинг", "Столовая"],
     thumbnail: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&h=600&fit=crop",
     featured: false,
   },
   {
     id: 4,
-    university: "СПбГУ",
-    location: "Санкт-Петербург",
-    duration: "14 мин",
+    university: "СДУ",
+    location: "Алматы",
+    duration: "11 мин",
     views: 7200,
-    spots: ["Двенадцать коллегий", "Василеостровский кампус", "Петергоф"],
+    spots: ["Кампус", "Общежития", "Спортзал", "Парк"],
     thumbnail: "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=800&h=600&fit=crop",
-    featured: true,
+    featured: false,
   },
 ];
 
 const spotIcons = {
-  "Главное здание": Building2,
+  "Главный корпус": Building2,
   "Библиотека": BookOpen,
+  "Научная библиотека": BookOpen,
   "Ботанический сад": TreePine,
   "Спорткомплекс": Dumbbell,
   "Столовая": Coffee,
+  "Парк": TreePine,
 };
 
 export default function VirtualTourPage() {
@@ -78,7 +80,7 @@ export default function VirtualTourPage() {
             Виртуальные <span className="text-gradient">3D туры</span>
           </h1>
           <p className="text-muted-foreground text-lg">
-            Исследуйте кампусы ведущих университетов, не выходя из дома.
+            Исследуйте кампусы ведущих университетов Казахстана, не выходя из дома.
           </p>
         </div>
 

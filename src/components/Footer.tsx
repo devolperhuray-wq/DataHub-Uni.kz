@@ -45,15 +45,15 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-background/70">
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
-                <span>info@datahub.edu</span>
+                <span>info@datahub.kz</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
-                <span>+7 (999) 123-45-67</span>
+                <span>+7 (777) 123-45-67</span>
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
-                <span>Москва, Россия</span>
+                <span>Астана, Казахстан</span>
               </li>
             </ul>
           </div>

@@ -22,7 +22,7 @@ const steps = [
   {
     number: "02",
     title: "Подготовьте документы",
-    description: "Соберите необходимые документы: аттестат, результаты ЕГЭ, портфолио.",
+    description: "Соберите необходимые документы: аттестат, результаты ЕНТ, портфолио.",
     icon: CheckCircle2,
   },
   {
@@ -40,42 +40,42 @@ const steps = [
 ];
 
 const deadlines = [
-  { date: "1 июня", event: "Начало приёма документов", status: "active" },
-  { date: "20 июля", event: "Окончание приёма на бюджет", status: "upcoming" },
+  { date: "20 июня", event: "Начало приёма документов", status: "active" },
+  { date: "20 июля", event: "Окончание приёма на грант", status: "upcoming" },
   { date: "25 августа", event: "Окончание приёма на платное", status: "upcoming" },
   { date: "1 сентября", event: "Начало учебного года", status: "upcoming" },
 ];
 
 const scholarships = [
   {
-    title: "Академическая стипендия",
-    amount: "от 10 000 ₽/мес",
-    description: "Для студентов с высокой успеваемостью",
+    title: "Государственный грант",
+    amount: "100% обучения",
+    description: "Для абитуриентов с высокими баллами ЕНТ",
   },
   {
-    title: "Социальная стипендия",
-    amount: "от 5 000 ₽/мес",
-    description: "Для студентов из малообеспеченных семей",
+    title: "Стипендия «Болашак»",
+    amount: "полное покрытие",
+    description: "Для обучения за рубежом",
   },
   {
-    title: "Президентский грант",
-    amount: "до 50 000 ₽/мес",
-    description: "Для победителей олимпиад и талантливых студентов",
+    title: "Ректорская стипендия",
+    amount: "от 50 000 ₸/мес",
+    description: "Для студентов с отличной успеваемостью",
   },
 ];
 
 const faqs = [
   {
     question: "Какие документы нужны для поступления?",
-    answer: "Паспорт, аттестат или диплом, результаты ЕГЭ, фото 3x4, медицинская справка.",
+    answer: "Удостоверение личности, аттестат, сертификат ЕНТ, фото 3x4, медицинская справка 086-У.",
   },
   {
     question: "Можно ли подать документы онлайн?",
-    answer: "Да, вы можете подать документы через личный кабинет абитуриента на сайте университета.",
+    answer: "Да, вы можете подать документы через портал edu.gov.kz или напрямую на сайте университета.",
   },
   {
-    question: "Есть ли подготовительные курсы?",
-    answer: "Да, большинство университетов предлагают подготовительные курсы к ЕГЭ и внутренним экзаменам.",
+    question: "Какой минимальный балл ЕНТ для поступления?",
+    answer: "Минимальный проходной балл зависит от специальности и университета, обычно от 50 до 100 баллов.",
   },
 ];
 
@@ -205,18 +205,20 @@ export default function AdmissionPage() {
         <Card className="hero-gradient border-0 overflow-hidden">
           <CardContent className="p-8 md:p-12 text-center text-primary-foreground">
             <h3 className="text-2xl md:text-3xl font-serif font-bold mb-4">
-              Готовы подать заявку?
+              Готовы к поступлению?
             </h3>
             <p className="text-primary-foreground/80 mb-6 max-w-xl mx-auto">
-              Начните свой путь к успешной карьере уже сегодня. Наши консультанты помогут вам на каждом этапе.
+              Начните свой путь к успешной карьере уже сегодня. Изучите программы и выберите свой вуз.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="lg">
-                Подать заявку
-                <ArrowRight className="ml-2 h-5 w-5" />
+              <Button variant="hero" size="lg" asChild>
+                <Link to="/programs">
+                  Изучить программы
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
               </Button>
               <Button variant="heroOutline" size="lg" asChild>
-                <Link to="/programs">Выбрать программу</Link>
+                <Link to="/comparison">Сравнить вузы</Link>
               </Button>
             </div>
           </CardContent>
